@@ -8,27 +8,25 @@ Turn long-form videos into topic-based clips, timestamped summaries, and Chinese
 
 ## What It Does
 
-```
-Any video URL (X, YouTube, Bilibili, ...)
-        │
-        ▼
-  ┌─────────────┐
-  │  Download    │  yt-dlp + HLS fallback
-  └──────┬──────┘
-         ▼
-  ┌─────────────┐
-  │ Transcribe  │  whisper, chunked & parallel
-  └──────┬──────┘
-         ▼
-  ┌─────────────┐
-  │  Clip by    │  topic-based, not equal-duration
-  │   Topic     │
-  └──────┬──────┘
-         ▼
-  ┌─────────────┐
-  │  Generate   │  summary / WeChat article / Xiaohongshu posts
-  │  Content    │
-  └─────────────┘
+```mermaid
+flowchart TD
+    A["🔗 Any Video URL\n(X, YouTube, Bilibili, ...)"] --> B
+    B["📥 Download\nyt-dlp + HLS fallback"] --> C
+    C["🎙️ Transcribe\nwhisper, chunked & parallel"] --> D
+    D["✂️ Clip by Topic\ncontent-based, not equal-duration"] --> E
+
+    E --> F["📝 Summary\ntimestamped, by topic"]
+    E --> G["📰 WeChat Article\nlong-form Chinese prose"]
+    E --> H["📱 Xiaohongshu Posts\n3-5 short-form drafts"]
+
+    style A fill:#1a1a2e,stroke:#e94560,color:#fff
+    style B fill:#16213e,stroke:#0f3460,color:#fff
+    style C fill:#16213e,stroke:#0f3460,color:#fff
+    style D fill:#16213e,stroke:#0f3460,color:#fff
+    style E fill:#0f3460,stroke:#e94560,color:#fff
+    style F fill:#533483,stroke:#e94560,color:#fff
+    style G fill:#533483,stroke:#e94560,color:#fff
+    style H fill:#533483,stroke:#e94560,color:#fff
 ```
 
 ## Output Structure
