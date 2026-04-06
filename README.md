@@ -54,7 +54,7 @@ Choose your path:
 ### Path A: Codex Users (one command)
 
 ```bash
-$skill-installer install github.com/YOUR_USERNAME/video-content-pipeline
+$skill-installer install github.com/MrHu1226/video-content-pipeline
 ```
 
 Done. Start chatting:
@@ -67,7 +67,7 @@ Done. Start chatting:
 
 ```bash
 # 1. Clone the skill
-git clone https://github.com/YOUR_USERNAME/video-content-pipeline.git \
+git clone https://github.com/MrHu1226/video-content-pipeline.git \
   ~/.agents/skills/video-content-pipeline
 
 # 2. Install Python dependencies
@@ -95,7 +95,7 @@ Or reference the skill explicitly:
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/YOUR_USERNAME/video-content-pipeline.git
+git clone https://github.com/MrHu1226/video-content-pipeline.git
 cd video-content-pipeline
 pip install -r requirements.txt
 brew install ffmpeg          # macOS (if not installed)
@@ -216,19 +216,19 @@ video-content-pipeline/
 
 **Codex 用户（最简单）：**
 ```bash
-$skill-installer install github.com/YOUR_USERNAME/video-content-pipeline
+$skill-installer install github.com/MrHu1226/video-content-pipeline
 ```
 
 **Claude Code 用户：**
 ```bash
-git clone https://github.com/YOUR_USERNAME/video-content-pipeline.git \
+git clone https://github.com/MrHu1226/video-content-pipeline.git \
   ~/.agents/skills/video-content-pipeline
 pip install -r ~/.agents/skills/video-content-pipeline/requirements.txt
 ```
 
 **不用 AI，直接跑脚本：**
 ```bash
-git clone https://github.com/YOUR_USERNAME/video-content-pipeline.git
+git clone https://github.com/MrHu1226/video-content-pipeline.git
 cd video-content-pipeline
 pip install -r requirements.txt
 python scripts/download_video.py "视频链接" ./output
