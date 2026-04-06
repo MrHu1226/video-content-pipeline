@@ -1,0 +1,18 @@
+# Video pipeline outputs
+video_*/
+*.mp4
+*.wav
+*.m4a
+*.webm
+
+# Audio chunks
+audio_chunks/
+
+# Python
+__pycache__/
+*.pyc
+.venv_video/
+
+# OS
+.DS_Store
+Thumbs.db

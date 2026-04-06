@@ -1,0 +1,7 @@
+interface:
+  display_name: "Video Content Pipeline"
+  short_description: "Download, clip, transcribe, and repurpose long-form videos"
+  default_prompt: >
+    Use $video-content-pipeline to handle video downloads, transcription,
+    topic-based clipping, and Chinese content asset generation.
+    Ask which deliverables are needed before starting.
